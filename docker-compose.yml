@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  front:
+    build:
+      context: ./app/
+    volumes:
+      - ./app:/app
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+    stdin_open: true
+    tty: true
+    entrypoint: bash
+    ports:
+      - '8000:8000'
+    extra_hosts:
+      - 'host.docker.internal:192.168.1.18'
