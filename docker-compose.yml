@@ -3,7 +3,8 @@ version: '3.4'
 services:
   front:
     build:
-      context: ./app/
+      context: ./
+    working_dir: /app
     volumes:
       - ./app:/app
     environment:
