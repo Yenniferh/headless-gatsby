@@ -4,9 +4,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Home`,
+    titleTemplate: "%s | Cody Blog",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id minima ipsum obcaecati esse, repellat quia similique quas maxime repellendus corporis amet, nostrum dolores deleniti deserunt voluptatem magnam? Assumenda, vero aliquam?`,
+    url: "https://codyblog.com",
+    image: "/images/og.jpg",
+    author: `@yenniferh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
